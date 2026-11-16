@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121214;
+  color: #f4f4f5;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Ensure editor text remains selectable */
+.cm-editor, textarea, input {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+
+/* CodeMirror height reset */
+.cm-editor {
+  height: 100% !important;
+}
